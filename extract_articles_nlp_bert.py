@@ -42,7 +42,7 @@ def extract_info(records):
         data.append({'title': title, 'authors': authors, 'year': year, 'source': source, 'abstract': abstract})
     return pd.DataFrame(data)
 
-# Função para calcular a similaridade semântica usando BERT
+# Função para calcular a similaridade semântica usando arquitetura BERT
 
 def calculate_similarity(texts, reference_texts):
     tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
